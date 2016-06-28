@@ -4,36 +4,27 @@
 int main() {
     int nroDia;
     char dia[10];
+    char msg[20];
     printf("Ingrese dia de la semana: ");
     scanf("%d", &nroDia);
 
     switch(nroDia) {
         case 1:
-        strcpy(dia, "Lunes"); // asigno a dia la cadena "Lunes"
-        break;
         case 2:
-        strcpy(dia, "Martes"); // asigno a dia la cadena "Martes"
+        strcpy(msg, "Inicio de semana");
         break;
         case 3:
-        strcpy(dia, "Miercoles");
+        strcpy(msg, "mitad de semana");
         break;
-        case 4:
-        strcpy(dia, "Jueves");
-        break;
+        case 4:        
         case 5:
-        strcpy(dia, "Viernes");
-        break;
-        case 6:
-        strcpy(dia, "Sabado");
-        break;
+        case 6:        
         case 7:
-        strcpy(dia, "Domingo");
+        strcpy(msg, "fin de semana");
         break;
-        default:
-        strcpy(dia, "no válido");
-        break;    
     }
     
-    printf("%d es %s\n",nroDia,dia);
+//    printf("%d es %s\n",nroDia,dia);
+    printf("Es %s\n",msg);
     return 0;
 }
