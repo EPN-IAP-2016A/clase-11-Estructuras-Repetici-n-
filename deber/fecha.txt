@@ -1,0 +1,57 @@
+/**
+    Escribir un programa que pida ingresar 3 numeros que representarán una fecha, 
+    es decir dia, mes, año.
+    El programa debe validar que la fecha ingresada sea válida, se debe tomar
+    en cuenta los siguientes casos:
+        - El mes debe estar entre 1 y 12 
+        - El número de día debe estar entre 1 y 31 dependiendo del mes ingresado, 
+            es decir abril no puede tener más de 30 días.
+        - Febrero solo tiene 28 días.
+    Al final del programa se debe mostrar la fecha en los siguientes formatos:
+        dd/mm/aaaa
+        dd de Mes de aaaa
+
+    Ejemplos de ejecución:
+    Ejemplo 1:
+        Ingrese el dia: 2
+        Ingrese el mes: 10
+        Ingrese el año: 1987
+
+        La fecha es válida.
+        02/10/1987
+        02 de Octubre de 1987
+
+    Ejemplo 2:
+        Ingrese el dia: 28
+        Ingrese el mes: 02
+        Ingrese el año: 2000
+
+        La fecha es válida.
+        28/02/2000
+        28 de Febrero de 2000
+
+    Ejemplo 3:
+        Ingrese el dia: 30
+        Ingrese el mes: 02
+        Ingrese el año: 2001
+
+        La fecha no es válida.
+        El mes de febrero solo puede tener 28 días.
+
+    Ejemplo 4:
+        Ingrese el dia: 31
+        Ingrese el mes: 04
+        Ingrese el año: 2004
+
+        La fecha no es válida.
+        El mes de abril solo puede tener 30 días.
+
+    Ejemplo 5:
+        Ingrese el dia: 31
+        Ingrese el mes: 24
+        Ingrese el año: 2004
+
+        La fecha no es válida.
+        El mes de 24 no existe.
+
+*/
